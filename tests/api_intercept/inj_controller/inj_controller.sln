@@ -1,0 +1,25 @@
+Microsoft Visual Studio Solution File, Format Version 10.00
+# Visual Studio 2008
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inj_controller", "inj_controller.vcproj", "{11517BDC-FEED-4BD0-9F61-889464372CC6}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "inj_dll", "..\inj_dll\inj_dll.vcproj", "{D835D24F-052E-4632-83C6-7A184BCC55F8}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{11517BDC-FEED-4BD0-9F61-889464372CC6}.Debug|Win32.ActiveCfg = Debug|Win32
+		{11517BDC-FEED-4BD0-9F61-889464372CC6}.Debug|Win32.Build.0 = Debug|Win32
+		{11517BDC-FEED-4BD0-9F61-889464372CC6}.Release|Win32.ActiveCfg = Release|Win32
+		{11517BDC-FEED-4BD0-9F61-889464372CC6}.Release|Win32.Build.0 = Release|Win32
+		{D835D24F-052E-4632-83C6-7A184BCC55F8}.Debug|Win32.ActiveCfg = Debug|Win32
+		{D835D24F-052E-4632-83C6-7A184BCC55F8}.Debug|Win32.Build.0 = Debug|Win32
+		{D835D24F-052E-4632-83C6-7A184BCC55F8}.Release|Win32.ActiveCfg = Release|Win32
+		{D835D24F-052E-4632-83C6-7A184BCC55F8}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

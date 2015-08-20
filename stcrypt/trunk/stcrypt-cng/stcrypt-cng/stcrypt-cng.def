@@ -1,0 +1,33 @@
+LIBRARY	"stcrypt-cng"
+
+
+EXPORTS
+	DllRegisterServer PRIVATE
+	DllUnregisterServer PRIVATE
+
+	GetHashInterface = GetHashInterface
+	GetCipherInterface = GetCipherInterface
+	GetAsymmetricEncryptionInterface = GetAsymmetricEncryptionInterface
+	GetKeyStorageInterface = GetKeyStorageInterface
+	GetSecretAgreementInterface = GetSecretAgreementInterface
+	GetRngInterface = GetRngInterface
+
+	STCRYPT_ExportPublicKeyInfoEx2 = STCRYPT_ExportPublicKeyInfoEx2
+	STCRYPT_ImportPublicKeyInfoEx2 = STCRYPT_ImportPublicKeyInfoEx2
+	STCRYPT_SignAndEncodeHash = STCRYPT_SignAndEncodeHash
+	STCRYPT_VerifyEncodedSignature = STCRYPT_VerifyEncodedSignature
+	STCRYPT_CryptEncodeObjectEx = STCRYPT_CryptEncodeObjectEx
+	STCRYPT_CryptDencodeObjectEx = STCRYPT_CryptDencodeObjectEx
+	CertDllVerifyRevocation = STCRYPT_CertVerifyRevocation
+
+	STCRYPT_CatchAllDummy = STCRYPT_CatchAllDummy
+	STCRYPT_CatchAllDummy1 = STCRYPT_CatchAllDummy1
+	STCRYPT_CatchAllDummy2 = STCRYPT_CatchAllDummy2
+	STCRYPT_CatchAllDummy3 = STCRYPT_CatchAllDummy3
+	STCRYPT_CatchAllDummy4 = STCRYPT_CatchAllDummy4
+	STCRYPT_CatchAllDummy5 = STCRYPT_CatchAllDummy5
+	STCRYPT_CatchAllDummy6 = STCRYPT_CatchAllDummy6
+	STCRYPT_CatchAllDummy7 = STCRYPT_CatchAllDummy7
+
+
+

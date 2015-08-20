@@ -1,0 +1,37 @@
+LIBRARY STCRYPT-CSP
+
+EXPORTS
+DUMMY1
+DUMMY2
+DUMMY3
+DUMMY4
+	STCRYPT_EncodePublicKeyAndParameters
+	STCRYPT_ConvertPublicKeyInfo
+	DllRegisterServer	PRIVATE
+	DllUnregisterServer	PRIVATE
+    CPAcquireContext
+    CPReleaseContext
+    CPGenKey
+    CPDeriveKey
+    CPDestroyKey
+    CPSetKeyParam
+    CPGetKeyParam
+    CPExportKey
+    CPImportKey
+    CPEncrypt
+    CPDecrypt
+    CPCreateHash
+    CPHashData
+    CPHashSessionKey
+    CPDestroyHash
+    CPDuplicateHash
+    CPDuplicateKey
+    CPSignHash
+    CPVerifySignature
+    CPGenRandom
+    CPGetUserKey
+    CPSetProvParam
+    CPGetProvParam
+    CPSetHashParam
+    CPGetHashParam
+

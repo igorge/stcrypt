@@ -1,0 +1,254 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Form Files">
+      <UniqueIdentifier>{99349809-55BA-4b9d-BF79-8FDBB0286EB3}</UniqueIdentifier>
+      <Extensions>ui</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{D9D6E242-F8AF-46E4-B9FD-80ECBC20BA3E}</UniqueIdentifier>
+      <Extensions>qrc;*</Extensions>
+      <ParseFiles>false</ParseFiles>
+    </Filter>
+    <Filter Include="Generated Files">
+      <UniqueIdentifier>{71ED8ED8-ACB9-4CE9-BBE1-E00B30144E11}</UniqueIdentifier>
+      <Extensions>moc;h;cpp</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Debug">
+      <UniqueIdentifier>{7d05f784-2f24-4f44-b087-800981039948}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="Generated Files\Release">
+      <UniqueIdentifier>{cca9e56f-943a-45e0-93b5-74309f2e72d0}</UniqueIdentifier>
+      <Extensions>cpp;moc</Extensions>
+      <SourceControlFiles>False</SourceControlFiles>
+    </Filter>
+    <Filter Include="mode select">
+      <UniqueIdentifier>{bbaea3ca-683a-43a2-9499-ec43115c6605}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="yetanothertoy_t">
+      <UniqueIdentifier>{cea91d37-752b-44ba-addf-345580c4a52f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ca_select_or_create_root_cert">
+      <UniqueIdentifier>{46e7b3e8-775a-48f4-9704-d75f07807662}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="mode selected CA">
+      <UniqueIdentifier>{4d52151d-34ac-4af6-bcd7-881d7e270db9}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ca_accept_requests">
+      <UniqueIdentifier>{7aa3795d-2c4e-4080-8c0b-b56e6dff4b1a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client_request_root_or_self_cert">
+      <UniqueIdentifier>{4f27bfdb-8317-4c87-91af-480dee07350b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="client_request_self_cert">
+      <UniqueIdentifier>{94c73296-a7f7-42d8-8699-489f8607e682}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ca_generate_root_ca_cert">
+      <UniqueIdentifier>{4d1f9763-bec1-4f51-a5f7-b1c5022c8ffd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="ca_cert_db">
+      <UniqueIdentifier>{593f6907-9b30-4542-b683-0434a90359d4}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="GeneratedFiles\Debug\moc_yetanothertoy_t.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_yetanothertoy_t.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\qrc_yetanothertoy_t.cpp">
+      <Filter>Generated Files</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_toy_mode_select.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_toy_mode_select.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="yetanothertoy_t.cpp">
+      <Filter>yetanothertoy_t</Filter>
+    </ClCompile>
+    <ClCompile Include="toy_mode_selected_ca.cpp">
+      <Filter>mode selected CA</Filter>
+    </ClCompile>
+    <ClCompile Include="ca_select_or_create_root_cert.cpp">
+      <Filter>ca_select_or_create_root_cert</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ca_select_or_create_root_cert.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ca_select_or_create_root_cert.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ca_accept_requests.cpp">
+      <Filter>ca_accept_requests</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ca_accept_requests.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ca_accept_requests.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="client_request_root_or_self_cert.cpp">
+      <Filter>client_request_root_or_self_cert</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_client_request_root_or_self_cert.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_client_request_root_or_self_cert.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="client_request_self_cert.cpp">
+      <Filter>client_request_self_cert</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_client_request_self_cert.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_client_request_self_cert.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="stdafx.cpp" />
+    <ClCompile Include="toy_cmds.cpp" />
+    <ClCompile Include="ca_generate_root_ca_cert.cpp">
+      <Filter>ca_generate_root_ca_cert</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Debug\moc_ca_generate_root_ca_cert.cpp">
+      <Filter>Generated Files\Debug</Filter>
+    </ClCompile>
+    <ClCompile Include="GeneratedFiles\Release\moc_ca_generate_root_ca_cert.cpp">
+      <Filter>Generated Files\Release</Filter>
+    </ClCompile>
+    <ClCompile Include="ca_cert_db.cpp">
+      <Filter>ca_cert_db</Filter>
+    </ClCompile>
+    <ClCompile Include="cert_db.cpp">
+      <Filter>ca_cert_db</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="GeneratedFiles\ui_yetanothertoy_t.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_toy_mode_select_t.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ca_select_or_create_root_cert.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="toy_mode_selected_ca.hpp">
+      <Filter>mode selected CA</Filter>
+    </ClInclude>
+    <ClInclude Include="toy_mode_selected_ca_if.hpp">
+      <Filter>mode selected CA</Filter>
+    </ClInclude>
+    <ClInclude Include="toy_mode_selected_ca_iif.hpp">
+      <Filter>mode selected CA</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_ca_accept_requests_form.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_accept_requests_if.hpp">
+      <Filter>ca_accept_requests</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_accept_requests_iif.hpp">
+      <Filter>ca_accept_requests</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_client_request_root_or_self_cert.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client_request_root_or_self_cert_if.hpp">
+      <Filter>client_request_root_or_self_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="client_request_root_or_self_cert_iif.hpp">
+      <Filter>client_request_root_or_self_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="GeneratedFiles\ui_client_request_self_cert.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="client_request_self_cert_if.hpp">
+      <Filter>client_request_self_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="client_request_self_cert_iif.hpp">
+      <Filter>client_request_self_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="toy_cmds.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="cert_name.hpp" />
+    <ClInclude Include="GeneratedFiles\ui_ca_generate_root_ca_cert.h">
+      <Filter>Generated Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_generate_root_ca_cert_if.hpp">
+      <Filter>ca_generate_root_ca_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_generate_root_ca_cert_iif.hpp">
+      <Filter>ca_generate_root_ca_cert</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_cert_db.hpp">
+      <Filter>ca_cert_db</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_cert_db_if.hpp">
+      <Filter>ca_cert_db</Filter>
+    </ClInclude>
+    <ClInclude Include="ca_cert_db_iif.hpp">
+      <Filter>ca_cert_db</Filter>
+    </ClInclude>
+    <ClInclude Include="cert_db.hpp">
+      <Filter>ca_cert_db</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <CustomBuild Include="yetanothertoy_t.qrc">
+      <Filter>Resource Files</Filter>
+    </CustomBuild>
+    <CustomBuild Include="toy_mode_select_t.ui">
+      <Filter>mode select</Filter>
+    </CustomBuild>
+    <CustomBuild Include="toy_mode_select.hpp">
+      <Filter>mode select</Filter>
+    </CustomBuild>
+    <CustomBuild Include="yetanothertoy_t.h">
+      <Filter>yetanothertoy_t</Filter>
+    </CustomBuild>
+    <CustomBuild Include="yetanothertoy_t.ui">
+      <Filter>yetanothertoy_t</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_select_or_create_root_cert.ui">
+      <Filter>ca_select_or_create_root_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_select_or_create_root_cert.hpp">
+      <Filter>ca_select_or_create_root_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_accept_requests_form.ui">
+      <Filter>ca_accept_requests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_accept_requests.hpp">
+      <Filter>ca_accept_requests</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client_request_root_or_self_cert.ui">
+      <Filter>client_request_root_or_self_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client_request_root_or_self_cert.hpp">
+      <Filter>client_request_root_or_self_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client_request_self_cert.ui">
+      <Filter>client_request_self_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="client_request_self_cert.hpp">
+      <Filter>client_request_self_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_generate_root_ca_cert.ui">
+      <Filter>ca_generate_root_ca_cert</Filter>
+    </CustomBuild>
+    <CustomBuild Include="ca_generate_root_ca_cert.hpp">
+      <Filter>ca_generate_root_ca_cert</Filter>
+    </CustomBuild>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="yetanothertoy.rc" />
+  </ItemGroup>
+</Project>

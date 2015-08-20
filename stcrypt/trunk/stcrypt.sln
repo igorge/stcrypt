@@ -1,0 +1,43 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stcrypt-csp", "stcrypt-csp\stcrypt-csp.vcxproj", "{80963F4F-752E-4EFF-9291-049A4051A90A}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stcrypt-csp-test", "stcrypt-csp-test\stcrypt-csp-test.vcxproj", "{1C99C7D7-07F6-40D3-AAE0-C8885444E61C}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "stcrypt-csp-ut", "stcrypt-csp-ut\stcrypt-csp-ut.vcxproj", "{5B12890F-5A3E-4B4C-8690-E89E3538295D}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "CryptoLib", "cryptosrc\CryptoLib\CryptoLib.vcxproj", "{BD2248D3-C24C-41B2-8E5D-87BE659AEAAD}"
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "asn1lib", "..\..\demo\stcryptcspdemo\common\commonlibrary\asn1lib\asn1lib.vcxproj", "{29518A7B-5CF9-4F8C-A69A-91019629AF87}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Win32 = Debug|Win32
+		Release|Win32 = Release|Win32
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{80963F4F-752E-4EFF-9291-049A4051A90A}.Debug|Win32.ActiveCfg = Debug|Win32
+		{80963F4F-752E-4EFF-9291-049A4051A90A}.Debug|Win32.Build.0 = Debug|Win32
+		{80963F4F-752E-4EFF-9291-049A4051A90A}.Release|Win32.ActiveCfg = Release|Win32
+		{80963F4F-752E-4EFF-9291-049A4051A90A}.Release|Win32.Build.0 = Release|Win32
+		{1C99C7D7-07F6-40D3-AAE0-C8885444E61C}.Debug|Win32.ActiveCfg = Debug|Win32
+		{1C99C7D7-07F6-40D3-AAE0-C8885444E61C}.Debug|Win32.Build.0 = Debug|Win32
+		{1C99C7D7-07F6-40D3-AAE0-C8885444E61C}.Release|Win32.ActiveCfg = Release|Win32
+		{1C99C7D7-07F6-40D3-AAE0-C8885444E61C}.Release|Win32.Build.0 = Release|Win32
+		{5B12890F-5A3E-4B4C-8690-E89E3538295D}.Debug|Win32.ActiveCfg = Debug|Win32
+		{5B12890F-5A3E-4B4C-8690-E89E3538295D}.Release|Win32.ActiveCfg = Release|Win32
+		{5B12890F-5A3E-4B4C-8690-E89E3538295D}.Release|Win32.Build.0 = Release|Win32
+		{BD2248D3-C24C-41B2-8E5D-87BE659AEAAD}.Debug|Win32.ActiveCfg = Debug|Win32
+		{BD2248D3-C24C-41B2-8E5D-87BE659AEAAD}.Debug|Win32.Build.0 = Debug|Win32
+		{BD2248D3-C24C-41B2-8E5D-87BE659AEAAD}.Release|Win32.ActiveCfg = Release|Win32
+		{BD2248D3-C24C-41B2-8E5D-87BE659AEAAD}.Release|Win32.Build.0 = Release|Win32
+		{29518A7B-5CF9-4F8C-A69A-91019629AF87}.Debug|Win32.ActiveCfg = Debug|Win32
+		{29518A7B-5CF9-4F8C-A69A-91019629AF87}.Debug|Win32.Build.0 = Debug|Win32
+		{29518A7B-5CF9-4F8C-A69A-91019629AF87}.Release|Win32.ActiveCfg = Release|Win32
+		{29518A7B-5CF9-4F8C-A69A-91019629AF87}.Release|Win32.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

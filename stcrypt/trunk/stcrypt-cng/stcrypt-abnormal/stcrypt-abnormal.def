@@ -1,0 +1,7 @@
+LIBRARY	"stcrypt-abnormal"
+
+
+EXPORTS
+	stcrypt_abnormal_wnd_hook = stcrypt_abnormal_wnd_hook
+
+

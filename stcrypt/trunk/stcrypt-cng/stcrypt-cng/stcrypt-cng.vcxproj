@@ -1,0 +1,206 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{BAA3C2D2-9981-4D7D-86F1-A3DF5CB6BC1A}</ProjectGuid>
+    <Keyword>Win32Proj</Keyword>
+    <RootNamespace>stcryptcng</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>DynamicLibrary</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <TargetName>$(ProjectName)</TargetName>
+    <OutDir>$(SystemRoot)\System32\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SystemRoot)\System32\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;CRYPT_OID_INFO_HAS_EXTRA_FIELDS;STCRYPTCNG_EXPORTS;STCRYPT_CNG;PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Boost\include\boost-1_43;c:\Program Files\Microsoft CNG Development Kit\Include;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\Gost34311;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\Gost28147;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\;$(SolutionDir)\..\common\asn1rt\skeletons;$(SolutionDir)\..\common\libs\singleton;$(SolutionDir)\..\common\libs\gieutils;$(SolutionDir)\..\common\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <MultiProcessorCompilation>
+      </MultiProcessorCompilation>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <ModuleDefinitionFile>stcrypt-cng.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Boost\lib;$(SolutionDir)\..\cryptosrc\CryptoLib\$(Configuration);c:\Program Files\Microsoft CNG Development Kit\Lib\X86;$(SolutionDir)$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>bcrypt.lib;Ncrypt.lib;Crypt32.lib;CryptoLib.lib;asn1lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <Optimization>Full</Optimization>
+      <FunctionLevelLinking>false</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;CRYPT_OID_INFO_HAS_EXTRA_FIELDS;STCRYPTCNG_EXPORTS;STCRYPT_CNG;PSAPI_VERSION=2;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <AdditionalIncludeDirectories>C:\Boost\include\boost-1_43;c:\Program Files\Microsoft CNG Development Kit\Include;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\Gost34311;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\Gost28147;$(SolutionDir)\..\cryptosrc\CryptoLib\SRC\;$(SolutionDir)\..\common\asn1rt\skeletons;$(SolutionDir)\..\common\libs\singleton;$(SolutionDir)\..\common\libs\gieutils;$(SolutionDir)\..\common\libs;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <RuntimeTypeInfo>true</RuntimeTypeInfo>
+      <FavorSizeOrSpeed>Speed</FavorSizeOrSpeed>
+      <EnableEnhancedInstructionSet>StreamingSIMDExtensions</EnableEnhancedInstructionSet>
+      <StringPooling>true</StringPooling>
+      <WholeProgramOptimization>true</WholeProgramOptimization>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <InlineFunctionExpansion>AnySuitable</InlineFunctionExpansion>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+      <ModuleDefinitionFile>stcrypt-cng.def</ModuleDefinitionFile>
+      <OutputFile>$(OutDir)$(TargetName)$(TargetExt)</OutputFile>
+      <AdditionalLibraryDirectories>C:\Boost\lib;$(SolutionDir)\..\cryptosrc\CryptoLib\$(Configuration);c:\Program Files\Microsoft CNG Development Kit\Lib\X86;$(SolutionDir)$(ConfigurationName);%(AdditionalLibraryDirectories)</AdditionalLibraryDirectories>
+      <AdditionalDependencies>bcrypt.lib;Ncrypt.lib;Crypt32.lib;CryptoLib.lib;asn1lib.lib;%(AdditionalDependencies)</AdditionalDependencies>
+      <LinkTimeCodeGeneration>UseLinkTimeCodeGeneration</LinkTimeCodeGeneration>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="stcrypt-cng.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stcrypt-cng-algs-register.hpp" />
+    <ClInclude Include="stcrypt-cng-buffer.hpp" />
+    <ClInclude Include="stcrypt-cng-constants.hpp" />
+    <ClInclude Include="stcrypt-cng-dll-utils.hpp" />
+    <ClInclude Include="stcrypt-cng-dllmain-common.hpp" />
+    <ClInclude Include="stcrypt-cng-dstu4145-impl.hpp" />
+    <ClInclude Include="stcrypt-cng-exception-filter.hpp" />
+    <ClInclude Include="stcrypt-cng-fs-keystorage-prop.hpp" />
+    <ClInclude Include="stcrypt-cng-gost28147-89.hpp" />
+    <ClInclude Include="stcrypt-cng-keystorage-provider-dllmain.hpp" />
+    <ClInclude Include="stcrypt-cng-keystorage-provider.hpp" />
+    <ClInclude Include="stcrypt-cng-oid-encdec.hpp" />
+    <ClInclude Include="stcrypt-cng-oid-exceptions.hpp" />
+    <ClInclude Include="stcrypt-cng-oid-func-register.hpp" />
+    <ClInclude Include="stcrypt-cng-oid-func.hpp" />
+    <ClInclude Include="stcrypt-cng-oid-register.hpp" />
+    <ClInclude Include="stcrypt-cng-register-exception.hpp" />
+    <ClInclude Include="stcrypt-cng-revocation-provider.hpp" />
+    <ClInclude Include="stcrypt-cng-revocation-provider_exception.hpp" />
+    <ClInclude Include="stcrypt-cng-revocation-provider_if.hpp" />
+    <ClInclude Include="stcrypt-cng-revocation-provider_iif.hpp" />
+    <ClInclude Include="stcrypt-cng-status.hpp" />
+    <ClInclude Include="stcrypt-cng-symmetric-provider.hpp" />
+    <ClInclude Include="stcrypt-cng.h" />
+    <ClInclude Include="stcrypt-crypto-alg-ids.h" />
+    <ClInclude Include="stcrypt-debug-logger-public.hpp" />
+    <ClInclude Include="stcrypt-debug-logger.hpp" />
+    <ClInclude Include="stcrypt-debug.hpp" />
+    <ClInclude Include="stcrypt-exceptions.hpp" />
+    <ClInclude Include="stcrypt-gost34311-impl.hpp" />
+    <ClInclude Include="stcrypt-runas.hpp" />
+    <ClInclude Include="stdafx.h" />
+    <ClInclude Include="stcrypt-cng-asymmetric-provider.hpp" />
+    <ClInclude Include="stcrypt-cng-dstu4145.hpp" />
+    <ClInclude Include="strcypt-cng-gost34311.hpp" />
+    <ClInclude Include="strcypt-cng-hash-provider.hpp" />
+    <ClInclude Include="strcypt-cng-provider.hpp" />
+    <ClInclude Include="strcypt-cng-register.hpp" />
+    <ClInclude Include="targetver.h" />
+    <ClInclude Include="util-atomic-counter.hpp" />
+    <ClInclude Include="util-bittest.hpp" />
+    <ClInclude Include="util-cng-get-prop.hpp" />
+    <ClInclude Include="util-cng-handle-two-stage-variant.hpp" />
+    <ClInclude Include="util-cng-obj-alloc.hpp" />
+    <ClInclude Include="util-cng-obj-ref.hpp" />
+    <ClInclude Include="util-cng-wrap.hpp" />
+    <ClInclude Include="util-fun-param-printer2.hpp" />
+    <ClInclude Include="util-fun-parameter-printer-cng-struct.hpp" />
+    <ClInclude Include="util-raw-buffer-oiter.hpp" />
+    <ClInclude Include="util-scope-exit.hpp" />
+    <ClInclude Include="util-sio-cng.hpp" />
+    <ClInclude Include="util-sio-exceptions.hpp" />
+    <ClInclude Include="util-sio.hpp" />
+    <ClInclude Include="util-str-conv.hpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\stcrypt-csp\stcrypt-key-blob.cpp" />
+    <ClCompile Include="dllmain.cpp">
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+      </PrecompiledHeader>
+      <CompileAsManaged Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">false</CompileAsManaged>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+      </PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-algs-register.cpp" />
+    <ClCompile Include="stcrypt-cng-buffer.cpp" />
+    <ClCompile Include="stcrypt-cng-dll-utils.cpp" />
+    <ClCompile Include="stcrypt-cng-dllmain-common.cpp" />
+    <ClCompile Include="stcrypt-cng-dstu4145-impl.cpp" />
+    <ClCompile Include="stcrypt-cng-exception-filter.cpp" />
+    <ClCompile Include="stcrypt-cng-fs-keystorage-prop.cpp" />
+    <ClCompile Include="stcrypt-cng-gost28147-89.cpp" />
+    <ClCompile Include="stcrypt-cng-keystorage-provider-dllmain.cpp" />
+    <ClCompile Include="stcrypt-cng-keystorage-provider.cpp" />
+    <ClCompile Include="stcrypt-cng-oid-encdec.cpp" />
+    <ClCompile Include="stcrypt-cng-oid-exceptions.cpp" />
+    <ClCompile Include="stcrypt-cng-oid-func-register.cpp" />
+    <ClCompile Include="stcrypt-cng-oid-func.cpp" />
+    <ClCompile Include="stcrypt-cng-oid-register.cpp" />
+    <ClCompile Include="stcrypt-cng-register-exception.cpp" />
+    <ClCompile Include="stcrypt-cng-revocation-provider-dllmain.cpp" />
+    <ClCompile Include="stcrypt-cng-revocation-provider.cpp" />
+    <ClCompile Include="stcrypt-cng-revocation-provider_exception.cpp" />
+    <ClCompile Include="stcrypt-cng-symmetric-provider.cpp" />
+    <ClCompile Include="stcrypt-cng.cpp" />
+    <ClCompile Include="stcrypt-debug-logger.cpp" />
+    <ClCompile Include="stcrypt-runas.cpp" />
+    <ClCompile Include="stdafx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-asymmetric-provider.cpp" />
+    <ClCompile Include="stcrypt-cng-dstu4145.cpp" />
+    <ClCompile Include="strcypt-cng-gost34311.cpp" />
+    <ClCompile Include="strcypt-cng-hash-provider.cpp" />
+    <ClCompile Include="strcypt-cng-provider.cpp" />
+    <ClCompile Include="strcypt-cng-register.cpp" />
+    <ClCompile Include="util-cng-obj-alloc.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

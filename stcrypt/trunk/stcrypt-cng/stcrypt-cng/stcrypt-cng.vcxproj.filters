@@ -1,0 +1,342 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Source Files">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="Header Files">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="util">
+      <UniqueIdentifier>{2ebd05b7-3d1c-4193-a496-d1b47b56daa6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="exceptions">
+      <UniqueIdentifier>{da6c03ad-b0e7-4559-99b0-4a3a28d12ee7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{601f3a8c-0b2d-4985-9b4d-35e3a5e942df}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug">
+      <UniqueIdentifier>{e9ce4374-cd4d-4268-a432-44a560312ae1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms">
+      <UniqueIdentifier>{a843ad01-bb30-4d28-97d1-dc4f333c9c21}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\hash">
+      <UniqueIdentifier>{37e323d4-d474-4d3a-9fc7-8e0f5e09aff1}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\provider">
+      <UniqueIdentifier>{a2fbf213-a018-4451-8047-bf332d5cead6}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="register">
+      <UniqueIdentifier>{3d020f72-d978-488b-89ca-8fb405590da8}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\symmetric">
+      <UniqueIdentifier>{303753c7-d861-481f-94da-0d55673ff195}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\symmetric\cpp-inc">
+      <UniqueIdentifier>{351fde99-a48a-44e9-95ed-1090b6a4353a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\asymmetric">
+      <UniqueIdentifier>{72bc8d5c-a9d1-4876-9705-c2e4e83d1883}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="keystorage">
+      <UniqueIdentifier>{6d1721e1-f776-46c7-b758-02639ce58a2a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="algorithms\asymmetric\cpp-inc">
+      <UniqueIdentifier>{8902296e-cd7f-4f84-ac98-1d5009cdb582}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="OID">
+      <UniqueIdentifier>{d26bb567-ccb8-4966-b2b2-e8d3b15d8dbb}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="debug\logger">
+      <UniqueIdentifier>{e9dae6de-f6d5-4d6e-ad5c-aec6898bde95}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="util\cng-buffer">
+      <UniqueIdentifier>{86d5cf08-1481-476f-a27e-1aa752917141}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="revocation provider">
+      <UniqueIdentifier>{30cdbe3f-1793-4074-8766-78ca4f2f1a34}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="register\runas">
+      <UniqueIdentifier>{6691dc7c-7cf4-4eee-9d2c-cfb4e879ce3d}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="stcrypt-cng.def">
+      <Filter>main</Filter>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="stcrypt-cng-status.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-exceptions.hpp">
+      <Filter>exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-exception-filter.hpp">
+      <Filter>exceptions</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-debug.hpp">
+      <Filter>debug</Filter>
+    </ClInclude>
+    <ClInclude Include="strcypt-cng-gost34311.hpp">
+      <Filter>algorithms\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="strcypt-cng-hash-provider.hpp">
+      <Filter>algorithms\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="strcypt-cng-provider.hpp">
+      <Filter>algorithms\provider</Filter>
+    </ClInclude>
+    <ClInclude Include="util-atomic-counter.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="strcypt-cng-register.hpp">
+      <Filter>register</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-crypto-alg-ids.h">
+      <Filter>algorithms</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-constants.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-bittest.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-cng-get-prop.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-cng-obj-ref.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-cng-obj-alloc.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-gost34311-impl.hpp">
+      <Filter>algorithms\hash</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-symmetric-provider.hpp">
+      <Filter>algorithms\symmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-gost28147-89.hpp">
+      <Filter>algorithms\symmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-keystorage-provider.hpp">
+      <Filter>keystorage</Filter>
+    </ClInclude>
+    <ClInclude Include="util-cng-wrap.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-cng-handle-two-stage-variant.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-asymmetric-provider.hpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-dstu4145.hpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-dstu4145-impl.hpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-fs-keystorage-prop.hpp">
+      <Filter>keystorage</Filter>
+    </ClInclude>
+    <ClInclude Include="util-sio.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-sio-cng.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-algs-register.hpp">
+      <Filter>register</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-oid-register.hpp">
+      <Filter>register</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-register-exception.hpp">
+      <Filter>register</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-oid-func-register.hpp">
+      <Filter>register</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-oid-func.hpp">
+      <Filter>OID</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-oid-encdec.hpp">
+      <Filter>OID</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-oid-exceptions.hpp">
+      <Filter>OID</Filter>
+    </ClInclude>
+    <ClInclude Include="util-raw-buffer-oiter.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-sio-exceptions.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-debug-logger.hpp">
+      <Filter>debug\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-debug-logger-public.hpp">
+      <Filter>debug\logger</Filter>
+    </ClInclude>
+    <ClInclude Include="util-fun-param-printer2.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-fun-parameter-printer-cng-struct.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="util-str-conv.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-dllmain-common.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-buffer.hpp">
+      <Filter>util\cng-buffer</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-revocation-provider.hpp">
+      <Filter>revocation provider</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-revocation-provider_if.hpp">
+      <Filter>revocation provider</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-revocation-provider_iif.hpp">
+      <Filter>revocation provider</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-dll-utils.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-revocation-provider_exception.hpp">
+      <Filter>revocation provider</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-cng-keystorage-provider-dllmain.hpp">
+      <Filter>keystorage</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-runas.hpp">
+      <Filter>register\runas</Filter>
+    </ClInclude>
+    <ClInclude Include="util-scope-exit.hpp">
+      <Filter>util</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-exception-filter.cpp">
+      <Filter>exceptions</Filter>
+    </ClCompile>
+    <ClCompile Include="strcypt-cng-gost34311.cpp">
+      <Filter>algorithms\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="strcypt-cng-hash-provider.cpp">
+      <Filter>algorithms\hash</Filter>
+    </ClCompile>
+    <ClCompile Include="strcypt-cng-provider.cpp">
+      <Filter>algorithms\provider</Filter>
+    </ClCompile>
+    <ClCompile Include="strcypt-cng-register.cpp">
+      <Filter>register</Filter>
+    </ClCompile>
+    <ClCompile Include="util-cng-obj-alloc.cpp">
+      <Filter>util</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-symmetric-provider.cpp">
+      <Filter>algorithms\symmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-gost28147-89.cpp">
+      <Filter>algorithms\symmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\stcrypt-csp\stcrypt-key-blob.cpp">
+      <Filter>algorithms\symmetric\cpp-inc</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-keystorage-provider.cpp">
+      <Filter>keystorage</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-asymmetric-provider.cpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-dstu4145.cpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-dstu4145-impl.cpp">
+      <Filter>algorithms\asymmetric</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-fs-keystorage-prop.cpp">
+      <Filter>keystorage</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-algs-register.cpp">
+      <Filter>register</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-oid-register.cpp">
+      <Filter>register</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-register-exception.cpp">
+      <Filter>register</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-oid-func-register.cpp">
+      <Filter>register</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-oid-func.cpp">
+      <Filter>OID</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-oid-encdec.cpp">
+      <Filter>OID</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-oid-exceptions.cpp">
+      <Filter>OID</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-debug-logger.cpp">
+      <Filter>debug\logger</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-dllmain-common.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-buffer.cpp">
+      <Filter>util\cng-buffer</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-revocation-provider-dllmain.cpp">
+      <Filter>revocation provider</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-revocation-provider.cpp">
+      <Filter>revocation provider</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-dll-utils.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-revocation-provider_exception.cpp">
+      <Filter>revocation provider</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-cng-keystorage-provider-dllmain.cpp">
+      <Filter>keystorage</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-runas.cpp">
+      <Filter>register\runas</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>

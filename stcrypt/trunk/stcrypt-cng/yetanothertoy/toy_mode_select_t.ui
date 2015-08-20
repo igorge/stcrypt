@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>ui_toy_mode_select_t</class>
+ <widget class="QWidget" name="ui_toy_mode_select_t">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>683</width>
+    <height>399</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <item>
+    <spacer name="horizontalSpacer">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+   <item>
+    <widget class="QPushButton" name="toy_mode_ca">
+     <property name="text">
+      <string>CA mode</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <widget class="QPushButton" name="toy_mode_client">
+     <property name="text">
+      <string>client mode</string>
+     </property>
+    </widget>
+   </item>
+   <item>
+    <spacer name="horizontalSpacer_2">
+     <property name="orientation">
+      <enum>Qt::Horizontal</enum>
+     </property>
+     <property name="sizeHint" stdset="0">
+      <size>
+       <width>40</width>
+       <height>20</height>
+      </size>
+     </property>
+    </spacer>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>toy_mode_ca</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_toy_mode_select_t</receiver>
+   <slot>ca_mode_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>303</x>
+     <y>206</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>423</x>
+     <y>319</y>
+    </hint>
+   </hints>
+  </connection>
+  <connection>
+   <sender>toy_mode_client</sender>
+   <signal>clicked()</signal>
+   <receiver>ui_toy_mode_select_t</receiver>
+   <slot>client_mode_selected()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>380</x>
+     <y>204</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>388</x>
+     <y>163</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+ <slots>
+  <slot>ca_mode_selected()</slot>
+  <slot>client_mode_selected()</slot>
+ </slots>
+</ui>

@@ -1,0 +1,7 @@
+package toy_ca;
+
+message cert_info {
+	required bool	is_revoked = 1  [default = false];
+	required bytes	cert_blob = 2;
+
+}

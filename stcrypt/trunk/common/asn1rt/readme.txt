@@ -1,0 +1,1 @@
+http://lionet.info/asn1c/blog/ skeleton files

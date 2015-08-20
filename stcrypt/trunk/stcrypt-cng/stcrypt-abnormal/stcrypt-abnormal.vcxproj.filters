@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="Resource Files">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="main">
+      <UniqueIdentifier>{25288911-21c5-41af-9e77-8a972663bfad}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="cpp-incl">
+      <UniqueIdentifier>{891b822f-b0c1-4209-95c7-84f01ba24450}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ReadMe.txt" />
+    <None Include="stcrypt-abnormal.def" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="targetver.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stdafx.h">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-abnormal.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+    <ClInclude Include="..\stcrypt-cng\stcrypt-debug-logger.hpp">
+      <Filter>cpp-incl</Filter>
+    </ClInclude>
+    <ClInclude Include="stcrypt-abnormal_common.hpp">
+      <Filter>main</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="dllmain.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stdafx.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="stcrypt-abnormal.cpp">
+      <Filter>main</Filter>
+    </ClCompile>
+    <ClCompile Include="..\stcrypt-cng\stcrypt-debug-logger.cpp">
+      <Filter>cpp-incl</Filter>
+    </ClCompile>
+  </ItemGroup>
+</Project>
